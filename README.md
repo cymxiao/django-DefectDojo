@@ -141,6 +141,14 @@ Proceeds are used for testing, infrastructure, etc.
 Interested in becoming a sponsor and having your logo displayed? Please review
 our [sponsorship information](SPONSORING.md) or email greg.anderson@owasp.org
 
+
+
+#run
+
+docker-compose -f docker-compose_base.yml -f docker-compose_uwsgi-release.yml up
+
+
+
 ## License
 
 DefectDojo is licensed under the [BSD Simplified license](LICENSE.md)

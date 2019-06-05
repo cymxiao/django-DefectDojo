@@ -1,0 +1,14 @@
+eleryworker_1  | subprocess.CalledProcessError: Command '['mysql', '--user=sa', '--password=111111abc!', '--host=localhost', '--port=3306', 'defectdojo']' returned non-zero exit status 1
+celerybeat_1    | .ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2 "No such
+file or directory")
+celerybeat_1    | Traceback (most recent call last):
+celerybeat_1    |   File "manage.py", line 10, in <module>
+celerybeat_1    |     execute_from_command_line(sys.argv)
+celerybeat_1    |   File "/usr/local/lib/python2.7/site-packages/django/core/management/__init__.py", line 364, in execute_from_command_line
+celerybeat_1    |     utility.execute()
+celerybeat_1    |   File "/usr/local/lib/python2.7/site-packages/django/core/management/__init__.py", line 356, in execute
+celerybeat_1    |     self.fetch_command(subcommand).run_from_argv(self.argv)
+celerybeat_1    |   File "/usr/local/lib/python2.7/site-packages/django/core/management/base.py", line 283, in run_from_argv
+celerybeat_1    |     self.execute(*args, **cmd_options)
+celerybeat_1    |   File "/usr/local/lib/python2.7/site-packages/django/core/management/base.py", line 330, in execute
+celerybeat_1    |     output = self.handle(*args, **options)
